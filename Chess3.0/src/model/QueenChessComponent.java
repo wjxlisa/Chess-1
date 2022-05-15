@@ -59,7 +59,7 @@ public class QueenChessComponent extends ChessComponent{
                     return false;//路上有子，不能越子
                 }
             }
-        } else if (yf==yf) { //横着走
+        } else if (y0==yf) { //横着走
             int col = y0;
             for (int row = Math.min(x0,xf) + 1; row < Math.max(x0,xf); row++) {
                 if (!(chessboard[row][col] instanceof EmptySlotComponent)) {
